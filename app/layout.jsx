@@ -8,8 +8,6 @@ import Footer from "@/components/footer"
 import Body from "@/components/body"
 import { ThemeProvider } from "next-themes"
 import Header from "@/components/header"
-import ThemeSwitch from "@/components/theme-switch"
-// import { useThemeConfig } from "@/contexts/theme";
 
 export const metadata = {
   title: "MillionScope.github.io",
@@ -25,7 +23,6 @@ export default function RootLayout({ children }) {
         <div dir="ltr">
           <Header />
           <Body>
-            {/* <ThemeSwitch className="" /> */}
             <ThemeProvider attribute="class" defaultTheme="light" enableSystem>{children}</ThemeProvider>
           </Body>
           <Footer />
