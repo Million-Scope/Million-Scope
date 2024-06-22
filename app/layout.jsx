@@ -22,6 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="nextra-banner-hidden">
+        <header>
+          <script defer data-domain="millionscope.com" src="https://plausible.io/js/script.js"></script>
+        </header>
         <div dir="ltr">
           <Header />
           <Body>
